@@ -3,21 +3,22 @@
  * you can also take the help from this link. and also select the COM port to uplaod the program. 
  */
 // Fill-in information from your Blynk Template here
-#define BLYNK_TEMPLATE_ID "TMPL3UJinHw1e"
-#define BLYNK_DEVICE_NAME "AutonomousDeliveryVehicle"
-
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_DEVICE_NAME "IoTCar"
+#define BLYNK_TEMPLATE_NAME "IoTCar"
 #define BLYNK_FIRMWARE_VERSION        "0.1.0"
 #define BLYNK_PRINT Serial
 #define USE_NODE_MCU_BOARD
 
 #include "BlynkEdgent.h"
+#include <EEPROM.h>       // Add this include
 #include<Servo.h>
-#define servo1 D2
-#define servo2 D5
-#define servo3 D1
+#define servo1 D2//
+#define servo2 D5//
+#define servo3 D1//
 #define servo4 D5
 
-#define ENA D6
+#define ENA D6//
 #define IN1 D7
 #define IN2 D8
 #define IN3 D3
@@ -114,7 +115,6 @@ void carLeft() {
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, HIGH);
   
-  
 }
 void carRight() {
   analogWrite(ENA, Speed);
@@ -130,10 +130,42 @@ void carStop() {
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, LOW);
 }
+
+void resetWiFiCredentials() {
+  Serial.println("Resetting WiFi credentials...");
+  
+  // Clear WiFi credentials
+  WiFi.disconnect(true);
+  WiFi.mode(WIFI_OFF);
+  
+  // Clear EEPROM configuration
+  EEPROM.begin(512);
+  for (int i = 0; i < 512; i++) {
+    EEPROM.write(i, 0);
+  }
+  EEPROM.commit();
+  EEPROM.end();
+  
+  // Erase WiFi config from flash
+  ESP.eraseConfig();
+  
+  // Clear any saved networks
+  WiFi.mode(WIFI_STA);
+  WiFi.persistent(false);
+  WiFi.disconnect(true);
+  
+  Serial.println("WiFi credentials reset complete");
+  delay(1000);
+}
+
 void setup()
 {
   Serial.begin(9600);
-  mservo4.attach(servo1);
+  
+  // Reset WiFi credentials on every power-on
+  resetWiFiCredentials();
+  
+  mservo1.attach(servo1);  // Fixed: was mservo4
   mservo2.attach(servo2); 
   mservo3.attach(servo3); 
   mservo4.attach(servo4);
@@ -144,6 +176,7 @@ void setup()
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
   pinMode(ENB, OUTPUT);
+  
   BlynkEdgent.begin();
   delay(1000); 
 }
@@ -152,4 +185,5 @@ void loop()
 {
   BlynkEdgent.run();
   smartcar();
+  
 }
