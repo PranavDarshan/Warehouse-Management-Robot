@@ -1,4 +1,3 @@
-
 extern "C" {
   #include "user_interface.h"
 
@@ -86,14 +85,16 @@ public:
 
     printDeviceBanner();
 
-    if (configStore.getFlag(CONFIG_FLAG_VALID)) {
-      BlynkState::set(MODE_CONNECTING_NET);
-    } else if (config_load_blnkopt()) {
-      DEBUG_PRINT("Firmware is preprovisioned");
-      BlynkState::set(MODE_CONNECTING_NET);
-    } else {
-      BlynkState::set(MODE_WAIT_CONFIG);
-    }
+    // Force configuration mode on every startup
+    DEBUG_PRINT("Forcing configuration mode on startup");
+    BlynkState::set(MODE_WAIT_CONFIG);
+    
+    // Alternative approach - comment out the above and use this instead:
+    /*
+    // Always clear configuration and force setup
+    configStore.clear();
+    BlynkState::set(MODE_WAIT_CONFIG);
+    */
   }
 
   void run() {
