@@ -1,0 +1,355 @@
+% Glossary definitions for IoT-Powered Automated Delivery Vehicle with Robotic Arm for Smart Warehousing
+% Usage: Include this file in your main LaTeX document using \input{glossaries.tex}
+% Make sure to include the glossaries package in your main document:
+% \usepackage[acronym,toc,nogroupskip]{glossaries}
+% \makeglossaries
+
+% ==================== SYMBOL GLOSSARY ENTRIES ====================
+% Mathematical Symbols and Variables
+\newglossaryentry{theta1}{name=$\theta_1$, description={Joint angle of robotic arm base rotation}, type=symbolList}
+\newglossaryentry{theta2}{name=$\theta_2$, description={Joint angle of robotic arm shoulder joint}, type=symbolList}
+\newglossaryentry{L1}{name=$L_1$, description={Length of first robotic arm link}, type=symbolList}
+\newglossaryentry{L2}{name=$L_2$, description={Length of second robotic arm link}, type=symbolList}
+\newglossaryentry{hbase}{name=$h_{base}$, description={Height of robotic arm base}, type=symbolList}
+\newglossaryentry{Vmotor}{name=$V_{motor}$, description={Effective motor voltage}, type=symbolList}
+\newglossaryentry{Vsupply}{name=$V_{supply}$, description={Supply voltage for motor systems}, type=symbolList}
+\newglossaryentry{PWMduty}{name=$PWM_{duty}$, description={PWM duty cycle value (0-255)}, type=symbolList}
+\newglossaryentry{Ptotal}{name=$P_{total}$, description={Total system power consumption}, type=symbolList}
+\newglossaryentry{PESP8266}{name=$P_{ESP8266}$, description={Power consumption of ESP8266 microcontroller}, type=symbolList}
+\newglossaryentry{Pmotors}{name=$P_{motors}$, description={Power consumption of DC motors}, type=symbolList}
+\newglossaryentry{Pservos}{name=$P_{servos}$, description={Power consumption of servo motors}, type=symbolList}
+\newglossaryentry{Pcamera}{name=$P_{camera}$, description={Power consumption of camera module}, type=symbolList}
+\newglossaryentry{Pcomm}{name=$P_{comm}$, description={Power consumption of communication module}, type=symbolList}
+\newglossaryentry{tauservo}{name=$\tau$, description={Time constant for servo response}, type=symbolList}
+\newglossaryentry{omega}{name=$\omega$, description={Angular velocity of servo motors}, type=symbolList}
+\newglossaryentry{xcoord}{name=$x$, description={X-coordinate in robotic arm workspace}, type=symbolList}
+\newglossaryentry{ycoord}{name=$y$, description={Y-coordinate in robotic arm workspace}, type=symbolList}
+\newglossaryentry{zcoord}{name=$z$, description={Z-coordinate in robotic arm workspace}, type=symbolList}
+\newglossaryentry{reach}{name=$Reach$, description={Maximum reach of robotic arm}, type=symbolList}
+\newglossaryentry{workspacearea}{name=$A_{workspace}$, description={Total workspace area of robotic arm}, type=symbolList}
+\newglossaryentry{batterylife}{name=$T_{battery}$, description={Battery operating life}, type=symbolList}
+\newglossaryentry{safetyfactor}{name=$SF$, description={Safety factor for battery discharge}, type=symbolList}
+
+% ==================== ACRONYM GLOSSARY ENTRIES ====================
+
+% A
+\newacronym{adc}{ADC}{Analog to Digital Converter}
+\newacronym{agv}{AGV}{Automated Guided Vehicle}
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newacronym{amr}{AMR}{Autonomous Mobile Robot}
+\newacronym{ansi}{ANSI}{American National Standards Institute}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{aws}{AWS}{Amazon Web Services}
+
+% B
+\newacronym{be}{B.E.}{Bachelor of Engineering}
+\newacronym{blynk}{Blynk}{Blynk IoT Platform}
+
+% C
+\newacronym{ce}{CE}{Conformité Européenne}
+\newacronym{cdn}{CDN}{Content Delivery Network}
+\newacronym{cpu}{CPU}{Central Processing Unit}
+\newacronym{crud}{CRUD}{Create, Read, Update, Delete}
+\newacronym{cs}{CS}{Computer Science}
+\newacronym{css}{CSS}{Cascading Style Sheets}
+\newacronym{cv}{CV}{Computer Vision}
+
+% D
+\newacronym{dac}{DAC}{Digital to Analog Converter}
+\newacronym{dc}{DC}{Direct Current}
+\newacronym{dof}{DOF}{Degrees of Freedom}
+
+% E
+\newacronym{ec}{EC}{Electronics and Communication}
+\newacronym{ece}{ECE}{Electronics and Communication Engineering}
+\newacronym{erp}{ERP}{Enterprise Resource Planning}
+\newacronym{esp8266}{ESP8266}{Espressif Systems 8266 Wi-Fi microcontroller}
+\newacronym{et}{ET}{Electronics and Telecommunication}
+
+% F
+\newacronym{fcc}{FCC}{Federal Communications Commission}
+\newacronym{firebase}{Firebase}{Google Firebase Platform}
+
+% G
+\newacronym{gcp}{GCP}{Google Cloud Platform}
+\newacronym{gpio}{GPIO}{General Purpose Input/Output}
+\newacronym{gui}{GUI}{Graphical User Interface}
+
+% H
+\newacronym{hmi}{HMI}{Human Machine Interface}
+\newacronym{html}{HTML}{HyperText Markup Language}
+\newacronym{http}{HTTP}{HyperText Transfer Protocol}
+\newacronym{https}{HTTPS}{HyperText Transfer Protocol Secure}
+
+% I
+\newacronym{i2c}{I2C}{Inter-Integrated Circuit}
+\newacronym{ic}{IC}{Integrated Circuit}
+\newacronym{ide}{IDE}{Integrated Development Environment}
+\newacronym{ieee}{IEEE}{Institute of Electrical and Electronics Engineers}
+\newacronym{iot}{IoT}{Internet of Things}
+\newacronym{ip}{IP}{Internet Protocol}
+\newacronym{iso}{ISO}{International Organization for Standardization}
+
+% J
+\newacronym{js}{JS}{JavaScript}
+\newacronym{json}{JSON}{JavaScript Object Notation}
+
+% K
+\newacronym{kpi}{KPI}{Key Performance Indicator}
+
+% L
+\newacronym{led}{LED}{Light Emitting Diode}
+\newacronym{lidar}{LiDAR}{Light Detection and Ranging}
+\newacronym{lipo}{LiPo}{Lithium Polymer}
+\newacronym{llama}{LLaMA}{Large Language Model Meta AI}
+\newacronym{llava}{LLaVA}{Large Language and Vision Assistant}
+
+% M
+\newacronym{mac}{MAC}{Media Access Control}
+\newacronym{me}{ME}{Mechanical Engineering}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{mqtt}{MQTT}{Message Queuing Telemetry Transport}
+
+% N
+\newacronym{nimh}{NiMH}{Nickel Metal Hydride}
+\newacronym{nodemcu}{NodeMCU}{Node MicroController Unit}
+\newacronym{nosql}{NoSQL}{Not Only Structured Query Language}
+
+% O
+\newacronym{opencv}{OpenCV}{Open Source Computer Vision Library}
+\newacronym{ota}{OTA}{Over-The-Air}
+
+% P
+\newacronym{pcb}{PCB}{Printed Circuit Board}
+\newacronym{plc}{PLC}{Programmable Logic Controller}
+\newacronym{psu}{PSU}{Power Supply Unit}
+\newacronym{pwm}{PWM}{Pulse Width Modulation}
+
+% Q
+\newacronym{qa}{QA}{Quality Assurance}
+\newacronym{qc}{QC}{Quality Control}
+\newacronym{qos}{QoS}{Quality of Service}
+\newacronym{qr}{QR}{Quick Response}
+
+% R
+\newacronym{ram}{RAM}{Random Access Memory}
+\newacronym{rest}{REST}{Representational State Transfer}
+\newacronym{rfid}{RFID}{Radio Frequency Identification}
+\newacronym{risc}{RISC}{Reduced Instruction Set Computer}
+\newacronym{roi}{ROI}{Return on Investment}
+\newacronym{rohs}{RoHS}{Restriction of Hazardous Substances}
+\newacronym{rom}{ROM}{Read Only Memory}
+\newacronym{rvce}{RVCE}{RV College of Engineering}
+
+% S
+\newacronym{scara}{SCARA}{Selective Compliance Assembly Robot Arm}
+\newacronym{sdk}{SDK}{Software Development Kit}
+\newacronym{sla}{SLA}{Service Level Agreement}
+\newacronym{slam}{SLAM}{Simultaneous Localization and Mapping}
+\newacronym{soc}{SoC}{System on Chip}
+\newacronym{spi}{SPI}{Serial Peripheral Interface}
+\newacronym{sql}{SQL}{Structured Query Language}
+\newacronym{ssl}{SSL}{Secure Sockets Layer}
+
+% T
+\newacronym{tcp}{TCP}{Transmission Control Protocol}
+\newacronym{tls}{TLS}{Transport Layer Security}
+
+% U
+\newacronym{uart}{UART}{Universal Asynchronous Receiver-Transmitter}
+\newacronym{udp}{UDP}{User Datagram Protocol}
+\newacronym{ui}{UI}{User Interface}
+\newacronym{ups}{UPS}{Uninterruptible Power Supply}
+\newacronym{usb}{USB}{Universal Serial Bus}
+\newacronym{ux}{UX}{User Experience}
+
+% V
+\newacronym{vtu}{VTU}{Visvesvaraya Technological University}
+
+% W
+\newacronym{wifi}{Wi-Fi}{Wireless Fidelity}
+\newacronym{wms}{WMS}{Warehouse Management System}
+
+% ==================== REGULAR GLOSSARY ENTRIES ====================
+
+\newglossaryentry{autonomousnavigation}{
+    name={autonomous navigation},
+    description={The ability of a robot to navigate through an environment without human intervention, using sensors and algorithms to perceive surroundings and plan paths}
+}
+
+\newglossaryentry{blynkplatform}{
+    name={Blynk platform},
+    description={An IoT platform that allows users to build mobile applications for IoT devices, providing widgets for controlling and monitoring hardware remotely}
+}
+
+\newglossaryentry{cloudcomputing}{
+    name={cloud computing},
+    description={The delivery of computing services over the internet, including storage, processing, and software applications}
+}
+
+\newglossaryentry{computervision}{
+    name={computer vision},
+    description={A field of artificial intelligence that enables computers to interpret and make decisions based on visual data from the world}
+}
+
+\newglossaryentry{differentialsteering}{
+    name={differential steering},
+    description={A steering mechanism where different speeds of wheels on each side of a vehicle control its direction}
+}
+
+\newglossaryentry{edgecomputing}{
+    name={edge computing},
+    description={A distributed computing paradigm that processes data near the source of data generation, reducing latency and bandwidth usage}
+}
+
+\newglossaryentry{embeddedcontrol}{
+    name={embedded control},
+    description={A computer system designed to perform specific control functions within a larger mechanical or electrical system}
+}
+
+\newglossaryentry{firebaseplatform}{
+    name={Firebase platform},
+    description={Google's mobile and web application development platform that provides cloud-based services including real-time database, authentication, and hosting}
+}
+
+\newglossaryentry{forwardkinematics}{
+    name={forward kinematics},
+    description={The process of determining the position and orientation of a robot's end-effector given the joint parameters}
+}
+
+\newglossaryentry{hbridgedriver}{
+    name={H-bridge driver},
+    description={An electronic circuit that allows a voltage to be applied across a load in either direction, commonly used for motor control}
+}
+
+\newglossaryentry{industryfouro}{
+    name={Industry 4.0},
+    description={The fourth industrial revolution characterized by the integration of digital technologies, IoT, and automation in manufacturing and warehousing}
+}
+
+\newglossaryentry{iotcommunication}{
+    name={IoT communication},
+    description={The various protocols and methods used for data exchange between Internet of Things devices and cloud services}
+}
+
+\newglossaryentry{kinematics}{
+    name={kinematics},
+    description={The branch of mechanics concerned with the motion of objects without reference to the forces which cause the motion}
+}
+
+\newglossaryentry{llamamodel}{
+    name={LLaMA model},
+    description={Large Language Model Meta AI, a family of foundation language models developed by Meta for natural language processing tasks}
+}
+
+\newglossaryentry{llavamodel}{
+    name={LLaVA model},
+    description={Large Language and Vision Assistant, a multimodal AI model that combines language and vision capabilities for understanding and generating responses about images}
+}
+
+\newglossaryentry{machinelearning}{
+    name={machine learning},
+    description={A subset of artificial intelligence that enables systems to automatically learn and improve from experience without being explicitly programmed}
+}
+
+\newglossaryentry{microcontroller}{
+    name={microcontroller},
+    description={A compact integrated circuit designed to govern a specific operation in an embedded system, containing a processor, memory, and input/output peripherals}
+}
+
+\newglossaryentry{mqttprotocol}{
+    name={MQTT protocol},
+    description={Message Queuing Telemetry Transport, a lightweight messaging protocol designed for small sensors and mobile devices in IoT applications}
+}
+
+\newglossaryentry{objectclassification}{
+    name={object classification},
+    description={The process of categorizing objects in images or video feeds into predefined classes using computer vision and machine learning techniques}
+}
+
+\newglossaryentry{pickandplace}{
+    name={pick and place},
+    description={A robotic operation that involves picking up an object from one location and placing it in another location with precision}
+}
+
+\newglossaryentry{pwmcontrol}{
+    name={PWM control},
+    description={Pulse Width Modulation control, a method of controlling power delivered to electrical devices by varying the width of pulses in a signal}
+}
+
+\newglossaryentry{qrcodedetection}{
+    name={QR code detection},
+    description={The process of identifying and decoding Quick Response codes using image processing techniques to extract embedded information}
+}
+
+\newglossaryentry{realtimemonitoring}{
+    name={real-time monitoring},
+    description={The continuous observation and analysis of system performance and status with immediate feedback and response capabilities}
+}
+
+\newglossaryentry{roboticarm}{
+    name={robotic arm},
+    description={A programmable mechanical arm with multiple joints and degrees of freedom designed to perform manipulation tasks}
+}
+
+\newglossaryentry{roboticmanipulation}{
+    name={robotic manipulation},
+    description={The use of robotic systems to interact with and manipulate objects in the physical world}
+}
+
+\newglossaryentry{servocalibration}{
+    name={servo calibration},
+    description={The process of adjusting servo motor parameters to ensure accurate positioning and response to control signals}
+}
+
+\newglossaryentry{servomotor}{
+    name={servo motor},
+    description={A rotary actuator that allows for precise control of angular position, velocity, and acceleration using feedback control}
+}
+
+\newglossaryentry{smartwarehousing}{
+    name={smart warehousing},
+    description={The integration of advanced technologies like IoT, robotics, and AI to automate and optimize warehouse operations}
+}
+
+\newglossaryentry{statemachine}{
+    name={state machine},
+    description={A computational model consisting of a finite number of states and transitions between those states, used to design control logic}
+}
+
+\newglossaryentry{systemintegration}{
+    name={system integration},
+    description={The process of bringing together component subsystems into one system and ensuring they function together}
+}
+
+\newglossaryentry{trajectoryplanning}{
+    name={trajectory planning},
+    description={The process of determining a sequence of configurations that moves a robot from a starting position to a goal position}
+}
+
+\newglossaryentry{warehouseautomation}{
+    name={warehouse automation},
+    description={The use of technology and automated systems to perform warehouse operations with minimal human intervention}
+}
+
+\newglossaryentry{webdashboard}{
+    name={web dashboard},
+    description={A web-based interface that provides visual displays of key information and controls for monitoring and managing systems}
+}
+
+\newglossaryentry{wirelesscommunication}{
+    name={wireless communication},
+    description={The transfer of information between devices without the use of physical connections such as wires or cables}
+}
+
+\newglossaryentry{workspaceanalysis}{
+    name={workspace analysis},
+    description={The study of the reachable area and operational limits of a robotic system within its working environment}
+}
+
+% ==================== FORCE ALL ENTRIES TO APPEAR ====================
+% This command ensures all defined entries appear in the glossary
+% even if they are not referenced in the document text
+\glsaddall
+
+% ==================== END OF GLOSSARY DEFINITIONS ====================
