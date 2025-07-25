@@ -1,3 +1,5 @@
+# Updated for the Project
+
 # RVCE-Latex-Project-Report-Template
 This is a Latex template is only for RV College of Engineering students for their report writing in latex. You can use this template for both UG and PG mini/major project report writing in Latex. The presentation slide, discussed about how to use the commands from `ecproject` package, is attached [here](https://github.com/rvce-latex/Project-Report-Template/blob/main/ReportLatexV3.8_CommandUsage.pdf).
 
